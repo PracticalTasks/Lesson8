@@ -151,49 +151,49 @@ public:
 
 int main()
 {
-	////Task 1
-	//{
-	//	cout << "Task 1\n";
-	//	try
-	//	{
-	//		cout<<my_div(25, 0);
-	//	}
-	//	catch(int a)
-	//	{
-	//		cout <<"Error: "<<a<<" Devided by zero\n";
-	//	}
-	//}
+	//Task 1
+	{
+		cout << "Task 1\n";
+		try
+		{
+			cout<<my_div(25, 0);
+		}
+		catch(int a)
+		{
+			cout <<"Error: "<<a<<" Devided by zero\n";
+		}
+	}
 
-	////Task 2
-	//{
-	//	cout << "\n\nTask 2\n";
-	//	Bar bar(50);
-	//	int var{ 0 };
-	//	while (true)
-	//	{
-	//		cout << "enter an integer:";
-	//		cin >> var;
-	//		if (var == 0)
-	//			break;
-	//		try
-	//		{
-	//			bar.set((float)var);
-	//		}
-	//		catch (Ex obj)
-	//		{
-	//			cout << "Error: " << obj.x << '\n';
-	//		}
-	//	}
-	//}
+	//Task 2
+	{
+		cout << "\n\nTask 2\n";
+		Bar bar(50);
+		int var{ 0 };
+		while (true)
+		{
+			cout << "enter an integer:";
+			cin >> var;
+			if (var == 0)
+				break;
+			try
+			{
+				bar.set((float)var);
+			}
+			catch (Ex obj)
+			{
+				cout << "Error: " << obj.x << '\n';
+			}
+		}
+	}
 
 	//Task 3
 	{
 		cout << "\n\nTask 3\n";
-		Robot robot;
+		Robot robot(3,2);
 		robot.draw();
 		try
 		{
-			robot.move(dRight, 10);
+			robot.move(dRight, 3);
 			robot.move(dDown, 7);
 			robot.draw();
 		}
@@ -205,9 +205,5 @@ int main()
 		{
 			cout << "Error IllegalCommand" <<"\nDirection:" << obj.direction << "\nStep:" << obj.step << '\n';
 		}
-
-
-
 	}
-
 }
